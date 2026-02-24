@@ -38,7 +38,7 @@ Developers hate writing documentation. It's tedious, time-consuming, and always 
 
 ### 💰 Cost-Effective AI
 
-We tested DocGenie on a production codebase with **31 API routes**. The total cost? **Less than $0.20** using GPT-4o. That's less than a cent per endpoint for comprehensive, accurate documentation.
+We tested DocGenie on a production codebase with **31 API routes**. The total cost? **Less than $0.20** using GPT-5 mini. That's less than a cent per endpoint for comprehensive, accurate documentation.
 
 ---
 
@@ -234,7 +234,7 @@ tags: [tutorial, getting-started]
 |-----------|------------|
 | Frontend | React, Vite, Lucide Icons |
 | Backend | Express.js, SQLite (WAL) |
-| AI | OpenAI GPT-4o, text-embedding-3-small |
+| AI | OpenAI GPT-5 mini, text-embedding-3-small |
 | File Watching | Chokidar |
 | Markdown | marked, gray-matter |
 
@@ -248,7 +248,7 @@ Real-world testing on a production codebase:
 |--------|-------|
 | API Routes Documented | 31 |
 | Total Tokens Used | ~50,000 |
-| Total Cost (GPT-4o) | **$0.18** |
+| Total Cost (GPT-5 mini) | **$0.18** |
 | Cost per Endpoint | **$0.006** |
 
 *Costs may vary based on code complexity and documentation depth.*
@@ -275,7 +275,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- OpenAI for GPT-4o and embedding models
+- OpenAI for GPT-5 mini and embedding models
 - The open-source community for inspiration and tools
 
 ---

@@ -234,7 +234,7 @@ IMPORTANT FORMATTING RULES:
 - Be precise about types (string, number, boolean, object, array)`;
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: 'gpt-5-mini',
     messages: [
       { role: 'system', content: 'You are a technical documentation writer specializing in API references. Generate documentation that is clear for human developers AND structured enough for AI agents and automated tools to parse. Always use proper code fence language tags (```json, ```bash, etc). Use consistent markdown heading hierarchy and table formats.' },
       { role: 'user', content: prompt }
@@ -253,7 +253,7 @@ export const generateApiDocWithTitle = async (code, filePath, method, routePath,
   let title = `${method} ${routePath}`;
   try {
     const titleResponse = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5-mini',
       messages: [
         { role: 'system', content: 'Generate a short, human-readable title (3-6 words) for this API endpoint documentation. The title should describe what the endpoint does, not just repeat the HTTP method and path. Do NOT include quotes in your response.' },
         { role: 'user', content: `Method: ${method}\nPath: ${routePath}\n\nDocumentation:\n${content.slice(0, 500)}` }
@@ -308,7 +308,7 @@ Only return valid JSON, no markdown formatting.`;
 
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-4o-mini',
+        model: 'gpt-5-mini',
         messages: [
           { role: 'system', content: 'You are a code analyzer. Extract API routes from code and return only valid JSON.' },
           { role: 'user', content: prompt }
@@ -541,7 +541,7 @@ Create a guide covering:
   }
   
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: 'gpt-5-mini',
     messages: [
       { role: 'system', content: selectedPrompt.system },
       { role: 'user', content: selectedPrompt.user }
@@ -575,7 +575,7 @@ export const generateTitle = async (content) => {
   const prompt = `Generate a short, descriptive title (max 5 words) for this document:\n\n${content.slice(0, 500)}`;
   
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: 'gpt-5-mini',
     messages: [
       { role: 'system', content: 'Generate concise document titles.' },
       { role: 'user', content: prompt }
@@ -617,7 +617,7 @@ Respond in JSON format only: {"category": "category_name", "subcategory": "subca
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5-mini',
       messages: [
         { role: 'system', content: 'You are a documentation categorizer. Respond with valid JSON only, no other text.' },
         { role: 'user', content: prompt }
