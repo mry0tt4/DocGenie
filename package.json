@@ -1,0 +1,41 @@
+{
+  "name": "docgenie",
+  "version": "1.0.0",
+  "description": "🧞 DocGenie - AI-powered documentation platform that automatically generates, categorizes, and maintains your docs. Point it at your codebase and watch your documentation write itself. Built with OpenAI GPT-4o, featuring semantic search, auto-categorization, and beautiful public docs.",
+  "author": "Dhiraj Hazarika",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mry0tt4/DocGenie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mry0tt4/DocGenie/issues"
+  },
+  "homepage": "https://github.com/mry0tt4/DocGenie#readme",
+  "keywords": [
+    "documentation",
+    "ai",
+    "openai",
+    "gpt-4",
+    "api-documentation",
+    "markdown",
+    "semantic-search",
+    "auto-documentation",
+    "developer-tools",
+    "code-documentation",
+    "doc-generator",
+    "technical-writing"
+  ],
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "migrate": "cd backend && npm run migrate"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
