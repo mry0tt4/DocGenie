@@ -6,6 +6,8 @@
 
 *Stop writing docs. Start shipping code.*
 
+<img src="public/assets/OG.png" alt="DocGenie OG Image" width="100%">
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?logo=openai&logoColor=white)](https://openai.com/)
@@ -13,6 +15,16 @@
 [Features](#-features) • [Quick Start](#-quick-start) • [Architecture](#-architecture) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
 </div>
+
+---
+
+## 📸 Screenshots
+
+### Dashboard Page
+<img src="public/assets/Dashboard_Page.png" alt="Dashboard Page" width="100%">
+
+### Public Documentation Page
+<img src="public/assets/Public_Doc_Page.png" alt="Public Documentation Page" width="100%">
 
 ---
 
